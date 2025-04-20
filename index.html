@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Navigation Stuff </title>
+    <meta name="description" content="testNine">
+    <meta name="author" content="Camille Martinez">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- fav icon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+
+
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo1x.png" alt="logo" width="45" height="20" srcset="images/logo1x 1x,images/logo2x.png 2x,images/logo3x.png 3x"> 
+            <span>EGG Landscaping</span>
+            <button id="theButton"></button>
+        </header>
+    </div>
+    <div id="navWrapper">
+        <nav>
+            <ul id="theNav">
+                <li class="active"><a href="#">Services</a></li>
+                <li class="parent"><a href="#">Clients</a>
+                    <ul>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Recommendations</a></li>
+                    </ul>
+                </li>
+
+                <li class="parent"><a href="#">Locations</a>
+                    <ul>
+                        <li><a href="#">Springville</a></li>
+                        <li><a href="#">Provo</a></li>
+                        <li><a href="#">Spanish Fork</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="mainWrapper">
+        <main>
+            <h1>Services</h1>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/sliderA-small.webp" srcset="images/sliderA-small.webp 1x, images/sliderA-medium.webp 2x, images/sliderA-large.webp 3x"></div>
+                    <div class="swiper-slide"><img src="images/sliderB-small.webp" srcset="images/sliderB-small.webp 1x, images/sliderB-medium.webp 2x, images/sliderB-large.webp 3x"></div>
+                    <div class="swiper-slide"><img src="images/sliderC-small.webp" srcset="images/sliderC-small.webp 1x, images/sliderC-medium.webp 2x, images/sliderC-large.webp 3x"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="cards">
+                <section>
+                    <h2>Grass Cutting</h2>
+                    <img src="images/cardpic-1.webp" width="400" height="250" alt="Garden Renovation">
+                    <img src="images/flowers.png" width="400" height="64" alt="mask">
+                </section>
+                <section>
+                    <h2>Junk Removal</h2>
+                    <img src="images/cardpic-2.webp" width="400" height="250" alt="Garden Maintenance">
+                    <img src="images/grassdrawing.png" width="400" height="43" alt="mask">
+                </section>
+                <section>
+                    <h2>Mulch and Bark</h2>
+                    <img src="images/cardpic-3.webp" width="400" height="250" alt="Fence Repair">
+                    <img src="images/flowers.png" width="400" height="40" alt="mask">
+                </section>
+                <section>
+                    <h2>Tree Trimming</h2>
+                    <img src="images/cardpic-4.webp" width="400" height="250" alt="Garden Design">
+                    <img src="images/grassdrawing.png" width="400" height="40" alt="mask">
+                </section>
+            </div>
+
+            <div class="testimonials">
+                <section>
+                    <img src="images/person-1.webp" width="736" height="1104" alt="customer testimonial">
+                    <p>I hired EGG Landscaping to completely redo my front and backyard, and I’m blown away by the transformation. The team was professional, on time, and communicated with me every step of the way. They helped me pick out low-maintenance plants that still look vibrant and beautiful. I was especially impressed by how they reshaped the lawn and installed a new irrigation system seamlessly. Even my neighbors have complimented how amazing everything looks now. They left the space spotless after the job, which I really appreciated. I would absolutely recommend EGG to anyone looking to enhance their outdoor space.</p>
+                </section>
+                <section>
+                    <img src="images/person-2.webp" width="736" height="1102" alt="customer testimonial">
+                    <p>EGG Landscape exceeded my expectations with their attention to detail and quality work. They trimmed overgrown trees, replaced worn-out mulch, and brought a fresh look to my backyard patio. The workers were polite and respectful of my property the entire time. They also gave helpful maintenance tips to keep everything looking great long after they left. What stood out most was their ability to work efficiently without cutting corners. The whole project was finished ahead of schedule and within my budget. I'm already planning to hire them again in the fall for seasonal clean-up.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <p>&copy; <span id="year">x</span> &bull; Camille Martinez</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/*---- apply a natural box layout model to all elements -------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    color: black;
+  }
+  #headerWrapper {
+    background-color: #e95710;
+    color: $PrimaryColor;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center;
+    padding: .5rem $gutter;
+    background-color: #e95710;
+    span {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  
+  #navWrapper {
+    background-color: #124926;
+    position: relative;
+    z-index: 1000;
+  }
+ 
+  
+  main h1 {
+    padding: 7px;
+  }
+  
+  .swiper, .swiper img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cards {
+    display: grid;
+    gap: 7px;
+    padding: 7px;
+  
+    section {
+      position: relative;
+    
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      img:last-child {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+  h2 {
+    color:#e95710;
+  }
+  
+  .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  
+    section {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 7px;
+  
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        clip-path: circle(50% at 50% 50%);
+        transition: transform 1s;
+  
+        &:hover {
+          transform: rotate(15deg);
+        }
+      }
+  
+      p {
+        color: $PrimaryColor;
+        line-height: 1.5;
+      }
+    }
+  }
+  
+  
+  // begin the footer
+  #footerWrapper {
+    background-color: #e95710;
+  }
+  footer {
+    padding: 0.5rem $gutter;
+    p {
+      margin: 0;
+      font-weight: $lightWeight;
+      text-align: center;
+      color: white;
+
+    }
+  }
