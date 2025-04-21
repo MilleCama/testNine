@@ -455,7 +455,7 @@ footer p {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
   #theNav li.active a {
-    background-color: #183d26;
+    background-color: #20a34c;
     font-weight: bold;
   }
   #theNav li a:hover {
@@ -515,7 +515,7 @@ footer p {
     color: rgba(255, 255, 255, 0.5);
   }
   #theNav li.active a {
-    background-color: #124926;
+    background-color: #20a34c;
   }
   #theNav li ul {
     background-color: #124926;
